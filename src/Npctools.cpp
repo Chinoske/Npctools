@@ -10,7 +10,6 @@ Compile : Success*/
 #include "Chat.h"
 #include "ScriptMgr.h"
 
-static bool BuffByLevel;
 static const uint32 buffIdstools[] = { 26035, 69994, 35076, 26393, 24425, 53758, 69559, 24705, 35874, 35912, 38734, 23735, 23736, 23737,  23738, 23767, 23768, 23769, 43223, 5862, 33377, 33779, 31305, 70692, 15366, 16609, 48162, 48074, 48170, 43223, 36880, 30562, 30567, 30557, 33081, 48469 };
 
 class tools_npc : public CreatureScript
@@ -45,9 +44,6 @@ public:
         // Who are we dealing with?
         std::string PlayerName = player->GetName();
         uint32 PlayerLevel = player->getLevel();
-
-        // Are we buffing based on level
-        if (BuffByLevel == true)
 
         player->PlayerTalkClass->ClearMenus();
 
