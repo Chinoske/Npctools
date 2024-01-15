@@ -1,0 +1,2 @@
+AC_ADD_SCRIPT("${CMAKE_CURRENT_LIST_DIR}/src/Npctools.cpp")
+AC_ADD_SCRIPT_LOADER("Npctools" "${CMAKE_CURRENT_LIST_DIR}/src/loader.h")
